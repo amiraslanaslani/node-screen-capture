@@ -1,5 +1,5 @@
 {
-  "name": "node-screen-capture",
+  "name": "nodejs-screen-capture",
   "version": "0.2.0",
   "description": "Node.js module to take a screenshot ",
   "main": "index.js",
@@ -24,7 +24,7 @@
     "email": "man@amiraslan.net",
     "url": "https://amiraslan.net"
   },
-  "license": "GPL-3.0",
+  "license": "LGPL-3.0",
   "bugs": {
     "url": "https://github.com/amiraslanaslani/node-screen-capture/issues"
   },
