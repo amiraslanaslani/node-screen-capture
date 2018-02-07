@@ -1,0 +1,32 @@
+{
+  "name": "node-screen-capture",
+  "version": "0.1.0",
+  "description": "Node.js module to take a screenshot ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amiraslanaslani/node-screen-capture.git"
+  },
+  "keywords": [
+    "node",
+    "screenshot",
+    "take",
+    "capture",
+    "screen",
+    "js",
+    "nodejs"
+  ],
+  "author": {
+    "name": "Amir Aslan Aslani",
+    "email": "man@amiraslan.net",
+    "url": "https://amiraslan.net"
+  },
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/amiraslanaslani/node-screen-capture/issues"
+  },
+  "homepage": "https://github.com/amiraslanaslani/node-screen-capture#readme"
+}
