@@ -1,6 +1,6 @@
 {
   "name": "nodejs-screen-capture",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Node.js module to take a screenshot ",
   "main": "index.js",
   "scripts": {

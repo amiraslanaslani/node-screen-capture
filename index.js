@@ -1,5 +1,5 @@
 var path = require("path");
-var exec = require('child_process').exec;
+var exec = require('child_process').execSync;
 
 exports.IMAGE_FORMAT_PNG = "png";
 exports.IMAGE_FORMAT_JPG = "jpg";
@@ -17,24 +17,24 @@ function commandPreprate(width, height, format){
     return commandCopy
 }
 
-function executeCommand(command, callback){
-    exec(command, function(error, stdout, stderr){ callback(stdout); });
+function executeCommand(command){
+    return exec(command);
 };
 
 exports.captureAndSave = function(width, height, format, file){
     var command = commandPreprate(width, height, format);
     command += " -o " + file;
-    return executeCommand(command,function(out){});
+    return executeCommand(command);
 }
 
-exports.captureAndGetStream = function(width, height, format, callback){
+exports.captureAndGetStream = function(width, height, format){
     var command = commandPreprate(width, height, format);
     command += " -s";
-    executeCommand(command,callback);
+    return executeCommand(command);
 }
 
-exports.captureAndGetBase64 = function(width, height, format, callback){
+exports.captureAndGetBase64 = function(width, height, format){
     var command = commandPreprate(width, height, format);
     command += " -b";
-    executeCommand(command,callback);
+    return executeCommand(command);
 }
